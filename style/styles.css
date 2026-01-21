@@ -6,6 +6,15 @@ nav a {
     padding: 10px;
     display: block; 
 }
+::selection {
+    background: steelblue; 
+    color: white; 
+}
+::-moz-selection {
+    background: steelblue; 
+    color: white;
+}
+
 main {
       width: 200px;
        height: auto;
