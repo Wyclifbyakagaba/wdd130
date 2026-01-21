@@ -1,49 +1,72 @@
-
+/* Navigation */
+nav {
+    background-color: #333;
+    padding: 1rem;
+}
 
 nav a {
-    background-color: #333; 
-    color: white; 
+    color: white;
     padding: 10px;
-    display: block; 
+    display: block;
 }
+
+/* Text selection styling */
 ::selection {
-    background: steelblue; 
-    color: white; 
+    background: steelblue;
+    color: white;
 }
 ::-moz-selection {
-    background: steelblue; 
+    background: steelblue;
     color: white;
 }
 
+/* Main content */
 main {
-      width: 200px;
-       height: auto;
-       border:1px solid steelblue; 
-       padding: 2px;
-       box-shadow:  0 0 30px  gray;
-    }
-    
-    p {
-        padding: 0;
-    }
+    max-width: 960px;
+    margin: 0 auto;
+    border: 1px solid steelblue;
+    padding: 1rem;
+    box-shadow: 0 0 30px gray;
+}
 
-    aside{
-        width:20em;
-        margin: 1em; 
-        border: 1px solid rgba(0,0,0,0.2);
-        padding: 1em;
-        background-color: #eee;
-        color: #333;
-        text-align: center;
-    } 
+/* Headings */
+h1 {
+    color: #2a2a2a;
+}
 
-    aside img{
-        width: 200px; 
-        height: auto; 
-    } 
+/* Paragraphs */
+p {
+    padding: 0;
+}
 
-    footer {
-        text-align: center; 
-        margin-top: 1em; 
-        border-top: 1px solid #000; 
-    }
+/* Images inside main */
+main img {
+    width: 200px;
+    height: auto;
+    border: 2px solid #ccc;
+    padding: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* Aside section */
+aside {
+    width: 20em;
+    margin: 1em;
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 1em;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 1em;
+    border-top: 1px solid #000;
+}
