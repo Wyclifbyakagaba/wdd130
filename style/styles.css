@@ -6,10 +6,7 @@ nav a {
     padding: 10px;
     display: block; 
 }
-<main>
-   - 
-    <img>
-selector {0,0,2}
+/* Specificity: 0 IDs, 0 classes, 2 elements */
 main img {
       width: 200px;
        height: auto;
@@ -42,4 +39,3 @@ main img {
         margin-top: 1em; 
         border-top: 1px solid #000; 
     }
-    
