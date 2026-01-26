@@ -3,7 +3,7 @@
   --primary-color: #004080;       /* deep blue */
   --accent1-color: #e65c00;       /* adjusted bright orange for contrast */
   --accent2-color: #00cc99;       /* bright green */
-  --heading-font: '"Times New Roman", "Georgia", serif';
+  --heading-font: '"Times New Roman", Georgia, serif';
   --body-font: 'Arial', Helvetica, sans-serif;
 }
 
