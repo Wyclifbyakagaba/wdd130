@@ -16,8 +16,8 @@
 
 body {
   font-family: var(--body-font);
-  color: var(--accent1-color);  /* text color updated to match adjusted orange */
-  background-color: #fff;
+  color: #B33F00;  /* text color updated to match adjusted orange */
+  background-color: #FFFFFF;
 }
 
 header {
@@ -64,8 +64,8 @@ nav, p, section, article {
   padding: 16px;
   text-align: center;
   opacity: 0.85;
-  background-color: var(--accent1-color);
-  color: #fff; /* white text for sufficient contrast */
+  background-color: #B33F00;
+  color: #FFFFFF; /* white text for sufficient contrast */
 }
 
 .hero article {
