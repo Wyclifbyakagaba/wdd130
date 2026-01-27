@@ -96,7 +96,7 @@ nav, p, section, article {
   left: 50%; /* center horizontally */
   transform: translateX(-50%);
   display: inline-block;
-  background-color: var(--accent1-color);
+  background-color:#e65c00;
   color: white;
   font-family: var(--body-font);
   font-size: 1.1em;
