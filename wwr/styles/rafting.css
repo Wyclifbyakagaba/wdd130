@@ -66,8 +66,12 @@ nav, p, section, article {
    background-color:var(--overlay-bg);
   padding:0,5em 1em;
   border-radius: 5px;
-  color: var(--secondary-colar);
+  color: var(--accent2-color);
+  transition: color 0.3s ease,text-shadow 0.3s ease;
 }
+.hero h1:hover {
+  color: var(--accent1-color);
+  text-shadow: 0 0 10px rgba(0,0,0,0.6);
 
 .hero article {
   position: absolute;
@@ -79,9 +83,8 @@ nav, p, section, article {
 }
 
 .hero article img {
-  float: right;
-  width: 125px;
-  margin-left: 12px;
+  transform:scale(1.05);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
 }
 .cta-button {
   position: absolute;
