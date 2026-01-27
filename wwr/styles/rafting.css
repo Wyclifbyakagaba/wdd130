@@ -82,9 +82,11 @@ nav, p, section, article {
   padding: 12px;
 }
 
-.hero article img {
+.hero article img{
+  float:right
   transform:scale(1.05);
   box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+
 }
 .cta-button {
   position: absolute;
