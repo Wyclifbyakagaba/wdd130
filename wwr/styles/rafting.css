@@ -7,7 +7,7 @@
   --body-font: 'Arial', Helvetica, sans-serif;
 }
 
-/* Universal Reset */
+
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -60,17 +60,18 @@ nav, p, section, article {
 .hero h1 {
   position: absolute;
   top: 20px;
-  width: 100%;
-  padding: 16px;
-  text-align: center;
-  opacity: 0.85;
-  background-color: #B33F00;
-  color: #FFFFFF; /* white text for sufficient contrast */
+  width: 50%;
+  transform: translatex(-50%);
+  font-size: 3rem;
+   background-color:var(--overlay-bg);
+  padding:0,5em 1em;
+  border-radius: 5px;
+  color: var(--secondary-colar);
 }
 
 .hero article {
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
   left: 20px;
   right: 20px;
   background-color: rgba(255,255,255,0.85);
