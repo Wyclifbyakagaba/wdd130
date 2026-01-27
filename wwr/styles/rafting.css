@@ -82,14 +82,19 @@ nav, p, section, article {
   width: 125px;
   margin-left: 12px;
 }
-button {
-   background-color: var(--accent1-color);
-    color: white; 
-    font-family: var(--body-font);
-     padding: 0.5em 1em;
-      border: none; 
-      border-radius: 4px; 
-      cursor: pointer; 
-    } 
-    button:hover { 
-      background-color: var(--accent2-color); }
+.cta-button {
+  position: absolute;
+  bottom: 80px; /* adjust vertical placement */
+  left: 50%; /* center horizontally */
+  transform: translateX(-50%);
+  display: inline-block;
+  background-color: var(--accent1-color);
+  color: white;
+  font-family: var(--body-font);
+  font-size: 1.1em;
+  padding: 0.75em 1.5em;
+  border-radius: 6px;
+  text-decoration: none; /* remove underline */
+  cursor: pointer;
+  opacity: 0.9;
+}
