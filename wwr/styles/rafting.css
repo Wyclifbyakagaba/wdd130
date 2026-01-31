@@ -1,122 +1,87 @@
-/* CSS Variables */
 :root {
-  --primary-color: #004080;       /* deep blue */
-  --accent1-color: #e65c00;       /* adjusted bright orange for contrast */
-  --accent2-color: #00cc99;       /* bright green */
-  --heading-font: '"Times New Roman", Georgia, serif';
-  --body-font: 'Arial', Helvetica, sans-serif;
-}
-
-
-*, *::before, *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: var(--body-font);
-  color: #B33F00;  /* text color updated to match adjusted orange */
-  background-color: #FFFFFF;
+    --primary-color: #055a05;
+    --accent1-color: #264653;
+    --accent2-color: #e9c46a;
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;
 }
 
 header {
-  background-color: var(--primary-color);
-  color: var(--accent2-color);
-  padding: 10px 0;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
 }
 
-header, main, footer {
-  width: 840px;
-  margin: 0 auto;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h1 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
 }
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1,
 h2 {
-  
-    font-size: 2em;   /* ✅ fixed missing semicolon */
-    color: navy;
+    font-family: var(--heading-font);
+    color: var(--primary-color);
 }
-nav, p, section, article {
-  margin: 16px;
-  padding: 8px;
+
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
 }
 
 .socialmedia a {
-  text-decoration: none;
-  color: var(--accent2-color);
+    text-decoration: none;
 }
 
-/* Hero Section */
 .hero {
-  position: relative;
+    position: relative;
 }
 
 .hero img {
-  display: block;
-  width: 100%;
-  height: auto;
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
-.hero h1 {
-  position: absolute;
-  top: 20px;
-  width: 50%;
-  transform: translatex(-50%);
-  font-size: 3rem;
-   background-color:var(--overlay-bg);
-  padding:0,5em 1em;
-  border-radius: 5px;
-  color: var(--accent2-color);
-  transition: color 0.3s ease,text-shadow 0.3s ease;
-}
-.hero h1:hover {
-  color: var(--accent1-color);
-  text-shadow: 0 0 10px rgba(0,0,0,0.6);
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: #fff;
+    /* white text - make sure there is enough contrast with the background-color */
 }
 
 .hero article {
-  position: absolute;
-  bottom: 10px;
-  left: 20px;
-  right: 20px;
-  background-color: rgba(255,255,255,0.85);
-  padding: 12px;
+    position: absolute;
+    bottom: 5px;
+    left: 48%;
+    transform: translateX(-50%);
+    background-color: var(--accent2-color);
+    padding: 4px;
+    width: 95%;
+    border-radius: 1px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
 }
 
-.hero article img{
-  float: right;
-  transform: scale(1.05);
-  margin-left: 15px;
-  max-width: 250px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
-
-}
-.cta-button {
-  position: absolute;
-  bottom: 80px; /* adjust vertical placement */
-  left: 50%; /* center horizontally */
-  transform: translateX(-50%);
-  display: inline-block;
-  background-color:#e65c00;
-  color: #000000;
-  font-family: var(--body-font);
-  font-size: 1.1em;
-  padding: 0.75em 1.5em;
-  border-radius: 6px;
-  text-decoration: none; /* remove underline */
-  cursor: pointer;
-  opacity: 0.9;
-}
-.some-class {
-    color: blue;
-    background: white;
-  
-    selector {
-    font-size: 2em;
-    color: navy;
-}
+.hero article img {
+    float: right;
+    width: 125px;
 }
