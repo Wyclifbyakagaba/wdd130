@@ -1,0 +1,64 @@
+nav {
+    background-color: #333;
+    padding: 1rem;
+}
+
+nav a {
+    color: white;
+    padding: 10px;
+    display: block;
+}
+
+::selection {
+    background: steelblue;
+    color: white;
+}
+::-moz-selection {
+    background: steelblue;
+    color: white;
+}
+
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    border: 1px solid steelblue;
+    padding: 1rem;
+    box-shadow: 0 0 30px gray;
+}
+
+h1 {
+    color: #2a2a2a;
+}
+
+p {
+    padding: 0;
+}
+
+main img {
+    width: 200px;
+    height: auto;
+    border: 2px solid #ccc;
+    padding: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+aside {
+    width: 20em;
+    margin: 1em;
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 1em;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    margin-top: 1em;
+    border-top: 1px solid #000;
+}
