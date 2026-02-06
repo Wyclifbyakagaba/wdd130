@@ -1,62 +1,24 @@
-/* Universal reset */ * { 
-  margin: 0; 
-  padding: 0; 
+/* Universal reset */
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-/* Define CSS variables in :root */
+/* CSS variables */
 :root {
   --primary-color: #1a73e8;   /* strong blue */
   --accent-color: #fbbc05;    /* bright yellow */
   --background-color: #f5f5f5;
   --text-color: #333;
 }
+
 /* Body styling */
- body { 
+body {
   background-color: var(--background-color);
-   color: var(--text-color); 
-   font-family: Arial, sans-serif; 
-   line-height: 1.6;
- }
- /* Header grid */
-  .header-grid { 
-    display: grid; 
-    grid-template-columns: auto 1fr; 
-    align-items: center; 
-    padding: 1rem; 
-    background-color: var(--primary-color); 
-  }
-
-/* Hero container must be relative */
-.hero {
-  position: relative;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-/* Hero heading and article overlay */
-.hero h1,
-.hero article {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translateX(-50%);
-  color: white;
-  background-color: rgba(0,0,0,0.4); /* optional overlay for readability */
-  padding: 1rem;
-}
-
-/* Float image inside hero article to the right */
-.hero article img {
-  float: right;
-  margin-left: 1rem;
-  max-width: 200px;
-  height: auto;
-}
-
-/* Footer social media links already correct */
-footer nav.socialmedia a {
-  text-decoration: none;
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
 }
 
 /* Header grid */
@@ -89,15 +51,31 @@ footer nav.socialmedia a {
   width: 100%;
   height: auto;
 }
-.hero h1 {
+.hero h1,
+.hero article {
   position: absolute;
   top: 20%;
   left: 50%;
   transform: translateX(-50%);
   color: white;
+  background-color: rgba(0,0,0,0.4);
+  padding: 1rem;
+}
+.hero article img {
+  float: right;
+  margin-left: 1rem;
+  max-width: 200px;
+  height: auto;
 }
 
-/* Adventure gallery */
+/* Sections */
+section {
+  margin: 2rem 0;
+  padding: 1rem;
+}
+section h2 {
+  color: var(--accent-color);
+}
 section figure {
   display: inline-block;
   margin: 1rem;
@@ -108,6 +86,10 @@ section figure img {
   height: auto;
   display: block;
 }
+section figure figcaption {
+  margin-top: 0.5rem;
+  color: var(--text-color);
+}
 
 /* Footer */
 footer {
@@ -116,7 +98,7 @@ footer {
   align-items: center;
   padding: 1rem;
   background-color: var(--primary-color);
-  color: white;
+  color: var(--background-color);
 }
 footer nav.socialmedia {
   display: flex;
