@@ -6,6 +6,12 @@
   --font-family: Arial, sans-serif;
 }
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: var(--background-color);
   color: var(--text-color);
@@ -19,13 +25,40 @@ header {
 a {
   color: var(--accent-color);
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* HERO CONTAINER FIXE*/
+.hero {
+  position: relative;
 }
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  text-shadow: 2px; 2px 4px rgba(0,0,0,0,6);
+  }
+
+  .hero article { 
+    position: absolute; 
+    bottom: 20px; left: 20px; 
+    color: white; 
+    max-width: 600px; 
+    background: rgba(0,0,0,0.4); /* optional overlay for readability */ 
+    padding: 1rem; 
+    border-radius: 4px;
+  }
+
 .hero article img {
   float: right;
   max-width: 300px;
   margin-left: 1rem;
 }
+
+/* SOCIAL MEDIA NAV FIXES */ 
+footer nav.socialmedia a { 
+  text-decoration: none; /* removes underline */
+   margin-right: 10px; 
+   display: inline-block; 
+  } 
+  footer nav.socialmedia a img {
+     display: block;
+  }
