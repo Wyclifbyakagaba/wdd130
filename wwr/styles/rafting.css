@@ -1,5 +1,55 @@
- .hero {
+/*==============================================
+  UNIVERSAL RESET
+  remove default margin/padding and fixes box-sizing
+  ==============================================*/
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 1200px;
+    margin:0 auto;
+ }
+ 
+.header-grid {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 2px solid #ccc; 
+}
+ 
+.logo {
+    max-width: 100%
+} 
+ 
+/*=======================================================
+  NAVIGATION - FLEX 
+  Horizontal layout for mav links
+  ======================================================*/
+main-nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+}
+main-nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+}
+
+/*===============================================================
+   HERO SECTION
+   large image with overlayed title and intro
+   ========================================================*/
+
+    .hero {
     position: relative;
+    margin: 2rem 0;
  }
 
  .hero img {
@@ -7,46 +57,80 @@
     height: auto;
     display: block;
 }
+
+/* Hero Title Overlay */
  .hero h1 {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.6);
-    color: #ffffff;
-    padding: 1rem;
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 2.5rem;
+     text-align: center;
 }
+
+/* Hero Intro Article Box */
+
 .hero article {
     position:absolute;
     bottom: 20%;
     left: 50%;
-    transform: translate(-50%, 50%);
+    transform: translate(-50%);
     padding: 1rem;
     background-color: rgba(255, 255, 255, 0.85);
     max-width: 800px;
-}
-.hero article img {
-    float: right;
-    margin-left:1rem;
-    width: 150px;
-    height: auto;
+    border: 2px solid #ccc; /* wireframe border */
 }
 
-/* Main Sections */
+.hero article p {
+    font-size: 1rem;
+}
+/*=============================================
+   SECTION (History and Adventure)
+   ===========================================*/
 main section {
-    padding: 2rem;
+    padding: 2rem  1rem;
+    border-top: 2px solid #ccc; /* wireframe separator */
 }
 
-.history {
-    background-color: #f4f4f4;
+main section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
 }
 
-/* Adventures */
+main section p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+/*=====================================================
+   ADVENTURE FIGURE GRID
+   5 figure boxes, responsive layout
+   ====================================================*/
+
 .adventures {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
     text-align: center;
+}
+
+figure {
+    border:2px solid #ccc;   /* wireframe box */
+    padding: 0.5rem;
+}
+
+figure  img {
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    margin-top: 0.5rem;
+    font-weight: bold;
 }
 
 .adventures img {
@@ -61,21 +145,24 @@ figcaption {
 
 /* Footer */
 footer {
-    background-color: #004d66;
-    color: #ffffff;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 1rem;
+    border-top: 2px solid #ccc; /* wireframe horizontal line */
+    margin: 2rem;
 }
 
-footer .social img {
-    width: 30px;
-    margin: 0 0.25rem;
-}
-figcaption {
-    font-size: 0.9rem;
-    padding-top: 0.5rem;
+/* FOOTER SOCIAL ICONS */
+.socialmedia {
+    display: flex;
+    gap: 0.5rem;
 }
 
+.socialmedia img {
+    width: 32px;
+    height: 32px;
+}
 
 
 
