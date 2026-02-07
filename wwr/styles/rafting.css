@@ -48,7 +48,7 @@ body {
 }
 
 .main-nav a {
-  color: white;
+  color: var(--background-color);
   text-decoration: none;
 }
 
