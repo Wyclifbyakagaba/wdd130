@@ -28,27 +28,24 @@
 
     <!-- ===== Company Info + Map (Wireframe Row 1) ===== -->
     <section class="contact-layout">
-
-      <div class="company-info">
+     <div class="company-info">
         <h2>Our Office</h2>
         <p><strong>Address:</strong> 123 River Road, jinja city, Uganda</p>
         <p><strong>Phone:</strong> +256 778 436 415</p>
         <p><strong>Email:</strong> info@whitewaterrafting.com</p>
       </div>
       
-        <div class="map">
+    <div class="map">
         <iframe
           src="https://www.google.com/maps?q=Jinja%20White%20Water%20Rafting%20Uganda&output=embed"
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
           title="Map showing White Water Rafting in Jinja, Uganda">
-</iframe>
+      </iframe>
+    </div> 
+ </section>
 
-      </div>
-
-    </section>
-
-    <!-- ===== Employees ===== -->
+<!-- ===== Employees ===== -->
     <section class="employees">
       <h2>Meet Our Team</h2>
 
@@ -66,58 +63,40 @@
        <img src="images/employee2.jpg" alt="sarah namanzi, River Instructor">
       <figcaption>Sarah namanzi – River Instructor</figcaption>
      </figure>
+  </section>
 
-    </section>
-
-    <!-- ===== Contact Form ===== -->
-    <section class="contact-form">
+<!-- ===== Contact Form ===== -->
+<form action="#" method="post"">
   <h2>Send Us a Message</h2>
 
-  <form action="#" method="post">
+  
+  <!-- Text input -->
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
 
-    <!-- Text input -->
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
+<!-- Email input -->
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
 
-    <!-- Email input -->
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
+<!-- Radio buttons -->
+  <fieldset>
+    <legend>Message Purpose</legend>
+    <label><input type="radio" name="purpose" value="general" required> General Inquiry</label> 
+    <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
+     <label><input type="radio" name="purpose" value="website"> Website Suggestion</label>
+     </fieldset> 
 
-    <!-- Radio buttons -->
-    <fieldset>
-      <legend>Message Purpose</legend>
+     <label for="message">Message:</label> 
+     <textarea id="message" name="message" rows="5" required></textarea> 
 
-      <label for="purpose-general">
-        <input type="radio" id="purpose-general" name="purpose" value="general" required>
-        General Inquiry
-      </label>
+     <label> 
+      <input type="checkbox" id="newsletter" name="newsletter"> 
+      Subscribe to our newsletter 
+     </label>
 
-      <label for="purpose-reservation">
-        <input type="radio" id="purpose-reservation" name="purpose" value="reservation">
-        Reservation Question
-      </label>
-
-      <label for="purpose-website">
-        <input type="radio" id="purpose-website" name="purpose" value="website">
-        Website Suggestion
-      </label>
-    </fieldset>
-
-    <!-- Textarea -->
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" rows="5" required></textarea>
-
-    <!-- Checkbox -->
-    <label for="newsletter">
-      <input type="checkbox" id="newsletter" name="newsletter">
-      Please subscribe me to the monthly newsletter
-    </label>
-
-    <!-- Submit button -->
+<!-- =Submit button -->
     <button type="submit">Send Message</button>
-
-  </form>
-</section>
+   </form>
 </main>
 
    
