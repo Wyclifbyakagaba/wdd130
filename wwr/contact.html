@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact us | White water rafting Company</title>
+    <title>Contact Us | White Water Rafting Company</title>
     <meta name="description" content="Contact White Water Rafting Company in Jinja, Uganda for reservations, inquiries, and river adventure information.">
     <meta name="author" content="Wycliff Byakagaba">
     <link rel="stylesheet" href="styles/rafting.css">
@@ -11,105 +11,118 @@
 
 <body>
 
-     <header class="header-grid">
-      <img src="images/log.jpeg" alt="White water rafting company logo" width="100" height="100">
-      <nav class="main-nav" aria-label="main site navigation">
+<header class="header-grid">
+    <img src="images/log.jpeg" alt="White Water Rafting Company Logo" width="100" height="100">
+    <nav class="main-nav" aria-label="Main site navigation">
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
         <a href="trips.html">Trips</a>
         <a href="contact.html">Contact Us</a>
-        </nav>
-   </header>
+    </nav>
+</header>
 
- 
 <main>
-   <h1>Contact Us</h1>
+    <h1>Contact Us</h1>
 
-    <!-- ===== Company Info + Map (Wireframe Row 1) ===== -->
+    <!-- Company Info + Map -->
     <section class="contact-layout">
-     <div class="company-info">
-        <h2>Our Office</h2>
-        <p><strong>Address:</strong> 123 River Road, jinja city, Uganda</p>
-        <p><strong>Phone:</strong> +256 778 436 415</p>
-        <p><strong>Email:</strong> info@whitewaterrafting.com</p>
-      </div>
-      
-    <div class="map">
-        <iframe
-          src="https://www.google.com/maps?q=Jinja%20White%20Water%20Rafting%20Uganda&output=embed"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          title="Map showing White Water Rafting in Jinja, Uganda">
-      </iframe>
-    </div> 
- </section>
+        <div class="company-info">
+            <h2>Our Office</h2>
+            <p><strong>Address:</strong> 123 River Road, Jinja City, Uganda</p>
+            <p><strong>Phone:</strong> +256 778 436 415</p>
+            <p><strong>Email:</strong> info@whitewaterrafting.com</p>
+        </div>
 
-<!-- ===== Employees ===== -->
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps?q=Jinja%20White%20Water%20Rafting%20Uganda&output=embed"
+                loading="lazy"
+                title="Map showing White Water Rafting in Jinja, Uganda">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Employees -->
     <section class="employees">
-      <h2>Meet Our Team</h2>
+        <h2>Meet Our Team</h2>
 
-      <figure>
-        <img src="images/employee1.jpg" alt="olak peter, Lead Rafting Guide">
-        <figcaption>olak peter – Lead Rafting Guide</figcaption>
-      </figure>
-     <figure>
-       <img src="images/employee2.jpg" alt="sarah namanzi, River Instructor">
-      <figcaption>Sarah namanzi – River Instructor</figcaption>
-     </figure>
-     <figure>
-        <img src="images/employee3.jpg" alt="asimwe micheal, Safety Officer">
-        <figcaption>Asimwe micheal – Safety Officer</figcaption>
-      </figure>
-   </section>
+        <figure>
+            <img src="images/employee1.jpg" alt="Olak Peter, Lead Rafting Guide">
+            <figcaption>Olak Peter – Lead Rafting Guide</figcaption>
+        </figure>
 
-<!-- ===== Contact Form ===== -->
-<form action="#" method="post">
-  <h2>Send Us a Message</h2>
+        <figure>
+            <img src="images/employee2.jpg" alt="Sarah Namanzi, River Instructor">
+            <figcaption>Sarah Namanzi – River Instructor</figcaption>
+        </figure>
 
-  <label for="name"> 
-  <input id="name" name="name">
+        <figure>
+            <img src="images/employee3.jpg" alt="Asimwe Micheal, Safety Officer">
+            <figcaption>Asimwe Micheal – Safety Officer</figcaption>
+        </figure>
+    </section>
 
-  <label for="email">
-  <input id="email" name="email">
+    <!-- Contact Form -->
+    <section class="contact-form">
+        <h2>Send Us a Message</h2>
 
-<fieldset>
-    <legend>Message Purpose</legend>
-    <label><input type="radio" name="purpose" value="general" required> General Inquiry</label> 
-    <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
-     <label><input type="radio" name="purpose" value="website"> Website Suggestion</label>
-     </fieldset> 
+        <form action="#" method="post">
 
-     <label for="message">   
-     <textarea id="message" name="message">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
 
-     <label> 
-      <input type="checkbox" id="newsletter" name="newsletter"> 
-      Subscribe to our newsletter 
-     </label>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
 
-<button type="submit">Send Message</button>
-  </form>
+            <fieldset>
+                <legend>Message Purpose</legend>
+                <label>
+                    <input type="radio" name="purpose" value="general" required>
+                    General Inquiry
+                </label>
+                <label>
+                    <input type="radio" name="purpose" value="reservation">
+                    Reservation Question
+                </label>
+                <label>
+                    <input type="radio" name="purpose" value="website">
+                    Website Suggestion
+                </label>
+            </fieldset>
 
-   
-<!--===============================================================
-      FOOTER
-==================================================================-->
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <label>
+                <input type="checkbox" id="newsletter" name="newsletter">
+                Subscribe to our newsletter
+            </label>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+    </section>
+
+</main>
+
 <footer>
     <p>© 2026 White Water Rafting | Byakagaba Wycliff</p>
 
     <nav class="socialmedia" aria-label="Social media links">
-       <a href="https://facebook.com">
-        <img src="images/facebook.jpeg" alt="facebook follow Us" width="32" height="32">
-      </a>
-       <a href="https://linkin.com">
-      <img src="images/linkin.jpeg" alt="linkin follow Us" width="32" height="32">
-      </a> 
-       <a href="https://instagram.com">
-        <img src="images/instagram.jpeg" alt="instagram follow Us" width="32" height="32"> 
-      </a>
-  </nav>
+        <a href="https://facebook.com">
+            <img src="images/facebook.jpeg" alt="Facebook" width="32" height="32">
+        </a>
+        <a href="https://linkedin.com">
+            <img src="images/linkin.jpeg" alt="LinkedIn" width="32" height="32">
+        </a>
+        <a href="https://instagram.com">
+            <img src="images/instagram.jpeg" alt="Instagram" width="32" height="32">
+        </a>
+    </nav>
 </footer>
+
 </body>
 </html>
+
 
 
