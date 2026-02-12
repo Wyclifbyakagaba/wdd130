@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rafting company | Contact Us</title>
-    <meta name="description" content="Get in touch with  Rafting Company in Jinja, Reach our team for inquiries, reservations, or support about your rafting adventure.">
-    <meta name="author" content="Wycliff Byakagaba">
+    <meta name="description" content="Contact White Water Rafting Company in Jinja. Reach our team directly for questions or assistance with your rafting experience.">
+     <meta name="author" content="Wycliff Byakagaba">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
@@ -62,48 +62,36 @@
         </figure>
     </section>
 
-    <!-- Contact Form -->
-    <section class="contact-form">
-        <h2>Send Us a Message</h2>
+  <main>
+  <section class="contact-form">
+    <h2>Send Us a Message</h2>
+    <form action="#" method="post">
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required>
 
-        <form action="#" method="post">
-            <label for="fullname">Full Name:</label> 
-            <input type="text" id="fullname" name="fullname"> 
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
 
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email">
+      <fieldset>
+        <legend>Purpose of Contact</legend>
+        <label><input type="radio" id="general" name="purpose" value="general" required> General Inquiry</label>
+        <label><input type="radio" id="reservation" name="purpose" value="reservation"> Reservation Question</label>
+        <label><input type="radio" id="website" name="purpose" value="website"> Website Suggestion</label>
+      </fieldset>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message"></textarea> 
-            
-            <fieldset> <legend>Purpose of Contact</legend>
-                <label><input type="radio" name="purpose" value="general" required>
-                    General Inquiry
-                </label>
-                <label>
-                    <input type="radio" name="purpose" value="reservation">
-                    Reservation Question
-                </label>
-                <label>
-                    <input type="radio" name="purpose" value="website">
-                    Website Suggestion
-                </label>
-            </fieldset>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
 
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+      <label>
+        <input type="checkbox" id="newsletter" name="newsletter">
+        Subscribe to our newsletter
+      </label>
 
-            <label>
-                <input type="checkbox" id="newsletter" name="newsletter">
-                Subscribe to our newsletter
-            </label>
-
-            <button type="submit">Send Message</button>
-
-        </form>
-    </section>
-
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
 </main>
+  
 
 <footer>
     <p>© 2026 White Water Rafting | Byakagaba Wycliff</p>
