@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rafting company | Contact Us</title>
-    <meta name="description" content="Contact Rafting Company in Jinja for rafting.">
+    <meta name="description" content="Contact Rafting Company in Jinja to book trips, ask questions, or learn more about our rafting adventures.">
     <meta name="author" content="Wycliff Byakagaba">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
@@ -67,17 +67,17 @@
         <h2>Send Us a Message</h2>
 
         <form action="#" method="post">
-
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" required>
+            <label for="fullname">Full Name:</label> 
+            <input type="text" id="fullname" name="fullname"> 
 
             <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email">
 
-            <fieldset>
-                <legend>Message Purpose</legend>
-                <label>
-                    <input type="radio" name="purpose" value="general" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea> 
+            
+            <fieldset> <legend>Purpose of Contact</legend>
+                <label><input type="radio" name="purpose" value="general" required>
                     General Inquiry
                 </label>
                 <label>
