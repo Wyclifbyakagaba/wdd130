@@ -43,7 +43,6 @@ body {
 
 .header-grid img {
   width: 100px;
-  height: 100px;
 }
 
 .main-nav {
@@ -55,7 +54,9 @@ body {
 .main-nav a {
   color: var(--accent-color);
   text-decoration: none;
-  font-weight: bold;
+  margin-left: 15px;
+  border: 1px solid var(--accent-color);
+  padding: 8px 16px;
 }
 
 .main-nav a:hover {
