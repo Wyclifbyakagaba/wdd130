@@ -277,8 +277,8 @@ form input[type="checkbox"] {
 }
 
 .map-container iframe {
-  width: 400px;
-  height: 300px;
+  width: 400%;
+  height: 100%;
   border: 0;
 }
 
