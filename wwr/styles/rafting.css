@@ -1,3 +1,20 @@
+/* =================================
+   WHITE WATER RAFTING COMPANY CSS
+   ================================= */
+
+/* ================================
+   CSS VARIABLES
+================================ */
+:root {
+  --primary-color: #1a4d6e;
+  --primary-light: #2d6a8a;
+  --primary-dark: #3d7a9e;
+  --background-color: #f5f5f5;
+  --text-color: #333;
+  --white: #ffffff;
+  --shadow: rgba(0,0,0,0.1);
+}
+
 /* ================================
    UNIVERSAL RESET
 ================================ */
@@ -7,17 +24,7 @@
   box-sizing: border-box;
 }
 
-/* ================================
-   CSS VARIABLES
-================================ */
-:root {
-  --primary-color: #1a73e8;
-  --background-color: #f9f9f9;
-  --text-color: #222;
-  --accent-color: #ffffff;
-  --button-color: #0b5394;
-  --button-text: #ffffff;
-}
+
 
 /* ================================
    BODY
@@ -25,61 +32,332 @@
 body {
   background-color: var(--background-color);
   color: var(--text-color);
-  font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
 }
 
 /* ================================
    HEADER
 ================================ */
-.header-grid {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: center;
-  padding: 1rem;
+header {
   background-color: var(--primary-color);
-  color: var(--accent-color);
-}
-
-.header-grid img {
-  width: 100px;
-}
-
-.main-nav {
+  padding: 1rem;
   display: flex;
-  gap: 1rem;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.main-nav a {
-  color: var(--accent-color);
+header img {
+  width: 80px;
+  height: auto;
+}
+
+nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: var(--white);
   text-decoration: none;
-  margin-left: 15px;
-  border: 1px solid var(--accent-color);
-  padding: 8px 16px;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
 }
 
-.main-nav a:hover {
-  text-decoration: underline;
+nav a:hover {
+  background-color: var(--primary-light);
+}
+
+nav a.active {
+  background-color: var(--primary-dark);
 }
 
 /* ================================
-   GENERAL SECTIONS
+   MAIN CONTENT
 ================================ */
-section {
-  margin: 2rem 0;
-  padding: 1.5rem;
-  background-color: #ffffff;
-  border-radius: 6px;
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
 }
 
+h1 {
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+}
 
-section h2 {
-  background-color: var(--primary-color);
-  color: var(--accent-color);
-  padding: 0.5rem;
-  border-radius: 4px;
+/* ================================
+   CONTACT LAYOUT
+================================ */
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* ================================
+   COMPANY INFO SECTION
+================================ */
+.company-info {
+  background-color: var(--white);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px var(--shadow);
+}
+
+.company-info h2 {
+  color: var(--primary-color);
   margin-bottom: 1rem;
+  font-size: 1.5rem;
+  background-color: transparent;
+  padding: 0;
+}
+
+.company-info p {
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.company-info .icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  fill: var(--primary-color);
+}
+
+/* ================================
+   CONTACT FORM SECTION
+================================ */
+.contact-form {
+  background-color: var(--white);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px var(--shadow);
+}
+
+.contact-form h2 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  background-color: transparent;
+  padding: 0;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-group {
+  margin-bottom: 0;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(26,77,110,0.2);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Form Fieldset */
+.contact-form fieldset {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.contact-form legend {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+/* Radio & Checkbox */
+form input[type="radio"],
+form input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+
+.checkbox-group label {
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+/* Submit Button */
+.submit-btn {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.submit-btn:hover {
+  background-color: var(--primary-light);
+}
+
+/* ================================
+   MAP SECTION
+================================ */
+.map-section {
+  background-color: var(--white);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px var(--shadow);
+  margin-bottom: 2rem;
+}
+
+.map-section h2 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  background-color: transparent;
+  padding: 0;
+}
+
+.map-container {
+  width: 100%;
+  height: 300px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* ================================
+   EMPLOYEES SECTION
+================================ */
+.employee-section {
+  background-color: var(--white);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px var(--shadow);
+  margin-bottom: 2rem;
+}
+
+.employee-section h2 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  background-color: transparent;
+  padding: 0;
+}
+
+.employee-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.employee-card {
+  text-align: center;
+}
+
+.employee-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+}
+
+.employee-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.25rem;
+  font-size: 1.1rem;
+}
+
+.employee-card p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* ================================
+   FOOTER
+================================ */
+footer {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 0.5rem;
+}
+
+footer a {
+  color: #87ceeb;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-links a {
+  color: var(--white);
+  text-decoration: none;
 }
 
 /* ================================
@@ -100,125 +378,80 @@ figcaption {
 }
 
 /* ================================
-   CONTACT LAYOUT (Office + Map)
+   RESPONSIVE DESIGN
 ================================ */
-.contact-layout {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  align-items: start;
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .employee-grid {
+    grid-template-columns: 1fr;
+  }
+
+  header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
-.company-info p {
-  margin: 0.5rem 0;
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  .company-info,
+  .contact-form,
+  .map-section,
+  .employee-section {
+    padding: 1rem;
+  }
+
+  nav {
+    gap: 0.75rem;
+  }
+
+  nav a {
+    padding: 0.4rem 0.75rem;
+    font-size: 0.9rem;
+  }
 }
 
-.map iframe {
-  width: 100%;
-  height: 300px;
-  border: none;
+/* ================================
+   ACCESSIBILITY
+================================ */
+a:focus,
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline: 3px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ================================
+   SECTION STYLING
+================================ */
+section {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background-color: var(--white);
   border-radius: 6px;
 }
 
-/* ================================
-   EMPLOYEES SECTION
-================================ */
-.employees {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 2rem;
-  margin-bottom: 2rem;
-}
-
-.employees img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-/* ================================
-    FORM  styling
-================================ */
- form label {
-  max-width: 700px;
-  margin: 0 auto 3rem auto;
-}
-
-.contact-form form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.contact-form label {
-  font-weight: bold;
-}
-
-form input[type="text"],
-form input[type="email"],
-form textarea,
-.contact-form textarea {
-  resize: vertical;
-  min-height: 80px;
-}
-
-.contact-form fieldset {
-  border: 1px solid #ccc;
-  padding: 1rem;
-  border-radius: 5px;
-}
-
-.contact-form legend {
-  margin-top: 10px;
-  font-weight: bold;
-}
-
-/* Radio & Checkbox */
-form input[type="radio"],
-form input[type="checkbox"] {
-    margin-right: 10px;
-}
-
-.contact-form button {
-     color: var(--button-text);
-     width: 100%;
-     padding: 5px;
-     margin-top: 10px;
-    border-radius: 5px;
-    font-size: 0.9rem;
-    cursor: pointer;
-}
-
-.contact-form button:hover {
+section h2 {
   background-color: var(--primary-color);
-}
-
-/* Newsletter Checkbox */
-.contact-form .newsletter {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-/* ================================
-   FOOTER
-================================ */
-footer {
-  background-color: var(--primary-color);
-  color: var(--accent-color);
-  text-align: center;
-  padding: 1rem;
-}
-
-.socialmedia {
-  margin-top: 0.5rem;
-}
-
-.socialmedia a {
-  margin: 0 0.5rem;
-}
-
-.socialmedia img {
-  width: 32px;
-  height: 32px;
+  color: var(--white);
+  padding: 0.5rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
 }
