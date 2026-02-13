@@ -153,17 +153,18 @@ figcaption {
   font-weight: bold;
 }
 
-.contact-form input,
-.contact-form textarea {
-  padding: 0.8rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1rem;
-}
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 5px;
+    margin-top: 8px;
+    border-radius: 10px;
+    font-size: 0.9rem;
 
 .contact-form textarea {
   resize: vertical;
-  min-height: 120px;
+  min-height: 80px;
 }
 
 .contact-form fieldset {
@@ -173,17 +174,24 @@ figcaption {
 }
 
 .contact-form legend {
+  margin-top: 10px;
   font-weight: bold;
 }
 
+/* Radio & Checkbox */
+form input[type="radio"],
+form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
 .contact-form button {
-  background-color: var(--button-color);
-  color: var(--button-text);
-  padding: 0.8rem;
-  border: none;
-  border-radius: 5px;
-  font-size: 1.1rem;
-  cursor: pointer;
+     color: var(--button-text);
+     width: 100%;
+     padding: 5px;
+     margin-top: 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
 }
 
 .contact-form button:hover {
