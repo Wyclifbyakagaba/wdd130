@@ -84,8 +84,7 @@ main {
   padding: 2rem 1rem;
 }
 
-h1 {
-  color: var(--primary-color);
+h1  {
   color: var(--white);
   text-align: center;
   margin-bottom: 2rem;
