@@ -3,106 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>White Water Rafting | Trips</title>
-    <meta name="description" content="Explore the rafting trips offered by White Water Rafting in Jinja, Uganda. Find adventure on the rapids, scenic views, and family-friendly trips.">
-    <meta name="author" content="Wycliff Byakagaba">
-    <link rel="stylesheet" href="styles/rafting.css">
+    <title>Trips | White Water Rafting Adventures</title>
+    <meta name="description" content="Explore our exciting white water rafting trips! Details, photos, and schedules for each adventure.">
+    <link rel="stylesheet" href="rafting.css">
 </head>
 <body>
+    <!-- Header / Navigation -->
+    <header>
+        <div class="logo">WWR Adventures</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<!-- ================= Header ================= -->
-<header class="header-grid">
-    <img src="images/log.jpeg" alt="White Water Rafting Company Logo" width="100" height="100">
-    <nav class="main-nav" aria-label="Main site navigation">
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="trips.html">Trips</a>
-        <a href="contact.html">Contact Us</a>
-    </nav>
-</header>
+    <!-- Main Content -->
+    <main>
+        <h1>Our Exciting Rafting Trips</h1>
 
-<main>
-    <h1>Our Rafting Trips</h1>
+        <!-- Trip Descriptions -->
+        <section class="trips">
+            <article>
+                <img src="wwr/images/trip1.jpg" alt="Rapid River Adventure">
+                <h2>Rapid River Adventure</h2>
+                <p>Navigate thrilling Class III rapids. Duration: 4 hours. For intermediate paddlers.</p>
+            </article>
+            <article>
+                <img src="wwr/images/trip2.jpg" alt="Family Friendly Rapids">
+                <h2>Family Friendly Rapids</h2>
+                <p>Safe and fun rafting experience for families. Duration: 2 hours. All ages welcome.</p>
+            </article>
+            <article>
+                <img src="wwr/images/trip3.jpg" alt="Extreme White Water Challenge">
+                <h2>Extreme White Water Challenge</h2>
+                <p>For adrenaline seekers. Tackle Class IV-V rapids. Duration: 5 hours. Must be experienced.</p>
+            </article>
+        </section>
 
-    <!-- ================= Trip Details Section ================= -->
-    <section class="trip-details">
-        <article class="trip">
-            <img src="images/trip1.jpg" alt="White Rapids Adventure">
-            <h2>White Rapids Adventure</h2>
-            <p>Experience thrilling class III-IV rapids. Perfect for adrenaline seekers looking for excitement and fun on the Nile.</p>
-        </article>
+        <!-- Trip Table -->
+        <section class="trip-table">
+            <h2>Trip Schedule & Details</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Trip</th>
+                        <th>Duration</th>
+                        <th>Difficulty</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rapid River Adventure</td>
+                        <td>4 hours</td>
+                        <td>Intermediate</td>
+                        <td>$120</td>
+                    </tr>
+                    <tr>
+                        <td>Family Friendly Rapids</td>
+                        <td>2 hours</td>
+                        <td>Easy</td>
+                        <td>$80</td>
+                    </tr>
+                    <tr>
+                        <td>Extreme White Water Challenge</td>
+                        <td>5 hours</td>
+                        <td>Advanced</td>
+                        <td>$200</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-        <article class="trip">
-            <img src="images/trip2.jpg" alt="Scenic River Journey">
-            <h2>Scenic River Journey</h2>
-            <p>Enjoy a peaceful float through lush greenery and breathtaking scenery. Ideal for photographers and nature lovers.</p>
-        </article>
+        <!-- Call to Action -->
+        <section class="cta">
+            <p>Ready to book your adventure? <a href="contact.html" class="btn-cta">Contact Us Today!</a></p>
+        </section>
+    </main>
 
-        <article class="trip">
-            <img src="images/trip3.jpg" alt="Family-Friendly Rafting">
-            <h2>Family-Friendly Rafting</h2>
-            <p>Safe rafting adventure suitable for all ages. Make lasting memories with family and friends on gentle rapids.</p>
-        </article>
-    </section>
-
-    <!-- ================= Call to Action ================= -->
-    <section class="cta">
-        <h2>Ready to Join the Adventure?</h2>
-        <p>Contact us today to reserve your spot on the river!</p>
-        <a href="contact.html" class="cta-button">Contact Us</a>
-    </section>
-
-    <!-- ================= Trips Table ================= -->
-    <section class="trip-table">
-        <h2>Available Trips Summary</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Trip Name</th>
-                    <th>Difficulty</th>
-                    <th>Duration</th>
-                    <th>Price (UGX)</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>White Rapids Adventure</td>
-                    <td>High</td>
-                    <td>3 Hours</td>
-                    <td>200,000</td>
-                </tr>
-                <tr>
-                    <td>Scenic River Journey</td>
-                    <td>Medium</td>
-                    <td>2 Hours</td>
-                    <td>150,000</td>
-                </tr>
-                <tr>
-                    <td>Family-Friendly Rafting</td>
-                    <td>Low</td>
-                    <td>1.5 Hours</td>
-                    <td>100,000</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-</main>
-
-<!-- ================= Footer ================= -->
-<footer>
-    <p>© 2026 White Water Rafting | Byakagaba Wycliff</p>
-    <nav class="socialmedia" aria-label="Social media links">
-        <a href="https://facebook.com">
-            <img src="images/facebook.jpeg" alt="Facebook" width="32" height="32">
-        </a>
-        <a href="https://linkedin.com">
-            <img src="images/linkin.jpeg" alt="LinkedIn" width="32" height="32">
-        </a>
-        <a href="https://instagram.com">
-            <img src="images/instagram.jpeg" alt="Instagram" width="32" height="32">
-        </a>
-    </nav>
-</footer>
-
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 WWR Adventures. All rights reserved.</p>
+    </footer>
 </body>
 </html>
