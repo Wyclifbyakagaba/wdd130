@@ -86,9 +86,8 @@ nav a.active {
    MAIN CONTENT
 ================================ */
 main {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
+  max-width: 100%;
+  padding: 0;
 }
 
 h1  {
@@ -99,10 +98,27 @@ h1  {
   font-size: 2.2rem;
 } 
 /* Hero or header overrides to ensure contrast */
-.hero h1,
-header h1 {
-  color: #1a4d6e; /* dark blue to ensure contrast */
+.hero  {
+  position: relative;
+  width: 100%;
 }
+.hero imag {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+  }
+  .hero article {
+    position: relative;
+  }
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5); /* semi-transparent overlay */
+    padding: 20px;
+    border-radius: 5px;
 .about-page h1,
 .about-page p {
   color: white;
@@ -403,13 +419,25 @@ figcaption {
 /* ================================
    RESPONSIVE DESIGN
 ================================ */
-@media (max-width: 768px) {
-  .contact-container {
-    grid-template-columns: 1fr;
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.75rem;
   }
 
-  .employee-grid {
+  .trips-grid {
     grid-template-columns: 1fr;
+  }
+  .company-info,
+  .contact-form,
+  .map-section,
+  .employee-section {
+
+  }    padding: 1rem;
+  }
+
+  nav a {
+    padding: 0.4rem 0.75rem;
+    font-size: 0.9rem;
   }
 
   header {
