@@ -1,44 +1,97 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 130 | Wycliff Byakagaba</title>
-    <meta name="description"
-      content="Wycliff Byakagaba's BYU-Idaho WDD 130 course homepage showcasing web development projects and learning journey.">
-    <meta name="author" content="Wycliff Byakagaba">
-    <link rel="stylesheet" href="styles/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Rafting Company</title>
+  <meta name="description" content="Experience the thrill of white water rafting with our expert guides. Join our rafting adventures today!">
+  <meta name="author" content="Wycliff Byakagaba">
 
+  <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="#">Home</a>
-            <a href="wwr/">Rafting Website</a>
-        </nav>
-    </header>
 
-    <main>
-        <h1>WDD 130 | Wycliff Byakagaba</h1>
-        <img src="images/wycliff_byakagaba_profile.jpg" alt="Wycliff Byakagaba profile picture">
-        <p>Hello, my name is Byakagaba Wycliff. I am a mechanic and also a student at BYU-Idaho
-            studying Software Engineering. This homepage is part of my WDD 130 course work.</p>
-    </main>
+  <!-- ================= HEADER ================= -->
+  <header>
+    <img src="images/logo.png" alt="Rafting Company Logo">
+    <h1>Rafting Adventures</h1>
 
-    <aside>
-        <h2>Country: Uganda</h2>
-        <img src="images/uganda_kampala_city.jpg" alt="Uganda's capital city Kampala">
-        <p>Uganda is a beautiful country located in East Africa. It is known for its diverse
-            landscapes that include mountains, lakes, and savannas. The capital city of Uganda is
-            Kampala, with a rich cultural heritage and abundant wildlife including gorillas, lions,
-            and elephants, making it a popular destination for safari enthusiasts.</p>
-    </aside>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="trips.html">Trips</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-    <footer>
-        <p>©2026 💎 Wycliff Byakagaba 💎 Kampala, Uganda</p>
-    </footer>
+  <!-- ================= MAIN ================= -->
+  <main>
+
+    <!-- HERO SECTION -->
+    <div class="hero">
+      <h1>Rafting Adventure</h1>
+      <p>Experience the Thrill of White Water Rafting!</p>
+    </div>
+
+    <!-- NEWSLETTER SECTION -->
+    <section>
+      <h2>Sign Up for Our Newsletter</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <button type="submit" class="submit-btn">Subscribe</button>
+      </form>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section>
+      <h2>Ready for Adventure?</h2>
+      <p>
+        <a href="trips.html" class="trip-btn">Explore Our Trips</a>
+      </p>
+    </section>
+
+    <!-- CONTENT GRID -->
+    <section class="employee-section">
+      <div class="employee-grid">
+
+        <div class="employee-card">
+          <img src="images/hero-running-water.jpg" alt="running water">
+          <h3>Rafting Fun</h3>
+          <p>Join us for an unforgettable rafting experience!</p>
+        </div>
+
+        <div class="employee-card">
+          <img src="images/happy-clients.jpeg" alt="happy clients">
+          <h3>Rafting Team</h3>
+          <p>Our expert guides ensure your safety and enjoyment!</p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <p>© 2025 Rafting Company. wycliff byakagaba</p>
+
+    <div class="social-links">
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+      <a href="#">Instagram</a>
+    </div>
+  </footer>
+
 </body>
 
 </html>
