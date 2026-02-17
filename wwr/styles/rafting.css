@@ -411,6 +411,11 @@ figcaption {
 @media (max-width: 480px) {
   h1 {
     font-size: 1.75rem;
+  
+  .trips-grid {
+    grid-template-columns: 1fr;
+  }
+
   }
 
   .company-info,
