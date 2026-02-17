@@ -35,6 +35,13 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
 }
+/* About page background image */ 
+body.about-page { 
+  background-image: url("images/rafting-background.jpg"); 
+  background-size: cover; /* enlarges image to fill the screen */
+   background-repeat: no-repeat;
+    background-position: center; 
+  }
 
 /* ================================
    HEADER
@@ -95,6 +102,14 @@ h1  {
 .hero h1,
 header h1 {
   color: #1a4d6e; /* dark blue to ensure contrast */
+}
+.about-page h1,
+.about-page p {
+  color: white;
+  text-align: center;
+  background-color: rgba(0,0,0,0.5); /* semi-transparent overlay */
+  padding: 10px;
+  border-radius: 5px;
 }
 
 
@@ -467,4 +482,18 @@ section h2 {
   padding: 0.5rem;
   border-radius: 4px;
   margin-bottom: 1rem;
+}
+/* ================================
+   ADVENTURE GALLERY
+================================ */
+.adventure-gallery {
+  display: flex;              /* puts figures side by side */
+  gap: 1rem;                  /* space between them */
+  justify-content: center;    /* centers the row */
+  flex-wrap: wrap;            /* allows wrapping on smaller screens */
+}
+
+.adventure-gallery figure {
+  flex: 1 1 200px;            /* each figure gets equal space, min 200px */
+  text-align: center;
 }
