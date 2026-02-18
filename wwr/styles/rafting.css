@@ -106,16 +106,18 @@ header.about-page-header {
   align-items: center;
   background-color: #eee;
   padding: 1rem 2rem;
+  color: rgb(0, 102, 72);
 }
 
 .logo-placeholder {
-  background-color: #ccc;
+  background-color: #fff;
   width: 150px;
   height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
+  color: ;rgb(0, 102, 72);
 }
 
 .main-nav a {
@@ -325,14 +327,7 @@ article {
   border-radius: 5px;
   color: var(--accent2-color);
   transition: color 0.3s ease, text-shadow 0.3s ease;
-}
-
-.hero h1:hover {
-  color: var(--accent1-color);
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-}
-
-.hero article {
+}.hero article {
   position: absolute;
   bottom: 10px;
   left: 20px;
