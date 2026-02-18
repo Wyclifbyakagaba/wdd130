@@ -1,6 +1,89 @@
+
 /* ==============================
-   CLEAN WIREFRAME STYLE
+   Wireframe Style for About Page
 ============================== */
+body.about-page {
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  color: #222;
+  margin: 0;
+}
+
+header.about-page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eee;   /* placeholder for header */
+  padding: 1rem 2rem;
+}
+
+.logo-placeholder {
+  background-color: #ccc;   /* logo placeholder */
+  width: 150px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.main-nav a {
+  background-color: #ddd;   /* nav link placeholder */
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #222;
+  margin-left: 0.5rem;
+  border-radius: 4px;
+}
+
+.hero {
+  background-color: #eee;   /* hero placeholder */
+  padding: 2rem;
+  text-align: center;
+}
+
+.hero-image {
+  background-color: #ccc;   /* image placeholder */
+  width: 80%;
+  height: 200px;
+  margin: 0 auto 1rem;
+}
+
+.hero-title {
+  background-color: #ddd;   /* text placeholder */
+  display: inline-block;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+}
+
+.hero-text {
+  background-color: #ddd;   /* text placeholder */
+  display: inline-block;
+  padding: 10px 20px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+section {
+  background-color: #eee;   /* section placeholder */
+  padding: 1.5rem;
+  margin: 1rem auto;
+  width: 90%;
+  min-height: 80px;
+}
+
+section h2 {
+  background-color: #ddd;   /* heading placeholder */
+  display: inline-block;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+
+section p {
+  background-color: #ddd;   /* text placeholder */
+  padding: 10px;
+}
+
 body.about-page {
   background-color: #f9f9f9;
   font-family: Arial, sans-serif;
