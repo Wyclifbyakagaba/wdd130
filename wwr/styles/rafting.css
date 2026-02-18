@@ -1,18 +1,18 @@
 /* ==============================
-   Wireframe Style for About Page
+   Global Variables
 ============================== */
-/* CSS Variables */
 :root {
   --primary-color: #004080;
-  /* deep blue */
   --accent1-color: #e65c00;
-  /* adjusted bright orange for contrast */
   --accent2-color: #00cc99;
-  /* bright green */
+  --secondary-color: #f5f5f5;   /* used on homepage/trips */
+  --text-color: #222;           /* used on homepage/about */
+  --overlay-bg: rgba(0,0,0,0.5);/* used in hero overlay */
   --heading-font: '"Times New Roman", Georgia, serif';
   --body-font: 'Arial', Helvetica, sans-serif;
 }
 
+/* Reset */
 *,
 *::before,
 *::after {
@@ -20,141 +20,54 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 /* ==============================
-   ==========homepage styles  ============== */
-/* Homepage Styles */
+   Homepage Styles (index.html)
+============================== */
 body.home-page {
-    background-color: var(--secondary-color);
-    color: var(--text-color);
-    line-height: 1.6;
-    font-family: Arial, sans-serif;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  font-family: var(--body-font);
 }
 
 body.home-page header {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-body.home-page header .logo {
-    font-weight: bold;
-    font-size: 1.5rem;
-}
-
-body.home-page header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-body.home-page header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-body.home-page header nav ul li a:hover {
-    color: var(--accent-color);
-  }
-.body.about-page {
-  background-color: #f9f9f9;
-  font-family: Arial, sans-serif;
-  color: #222;
-  margin: 0;
-}
-
-header.about-page-header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 15px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #eee;
-  /* placeholder for header */
-  padding: 1rem 2rem;
 }
 
-.logo-placeholder {
-  background-color: #ccc;
-  /* logo placeholder */
-  width: 150px;
-  height: 50px;
+body.home-page header .logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+body.home-page header nav ul {
+  list-style: none;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  gap: 20px;
+}
+
+body.home-page header nav ul li a {
+  color: white;
+  text-decoration: none;
   font-weight: bold;
 }
 
-.main-nav a {
-  background-color: #ddd;
-  /* nav link placeholder */
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  color: #222;
-  margin-left: 0.5rem;
-  border-radius: 4px;
+body.home-page header nav ul li a:hover {
+  color: var(--accent1-color);
 }
 
-.hero {
-  background-color: #eee;
-  /* hero placeholder */
-  padding: 2rem;
-  text-align: center;
-}
-
-.hero-image {
-  background-color: #ccc;
-  /* image placeholder */
-  width: 80%;
-  height: 200px;
-  margin: 0 auto 1rem;
-}
-
-.hero-title {
-  background-color: #ddd;
-  /* text placeholder */
-  display: inline-block;
-  padding: 10px 20px;
-  margin-bottom: 10px;
-}
-
-.hero-text {
-  background-color: #ddd;
-  /* text placeholder */
-  display: inline-block;
-  padding: 10px 20px;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-
-section {
-  background-color: #eee;
-  /* section placeholder */
-  padding: 1.5rem;
-  margin: 1rem auto;
-  width: 90%;
-  min-height: 80px;
-}
-
-section h2 {
-  background-color: #ddd;
-  /* heading placeholder */
-  display: inline-block;
-  padding: 5px 10px;
-  margin-bottom: 10px;
-}
-
-section p {
-  background-color: #ddd;
-  /* text placeholder */
-  padding: 10px;
-}
-
+/* ==============================
+   About Page Styles (about.html)
+============================== */
 body.about-page {
   background-color: #f9f9f9;
-  font-family: Arial, sans-serif;
-  color: #222;
+  font-family: var(--body-font);
+  color: var(--text-color);
   margin: 0;
 }
 
@@ -175,7 +88,7 @@ header.about-page-header {
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  color: ;rgb(0, 102, 72);
+  color: rgb(0, 102, 72);
 }
 
 .main-nav a {
@@ -200,17 +113,12 @@ header.about-page-header {
   margin: 0 auto 1rem;
 }
 
-.hero-title {
-  background-color: #ddd;
-  display: inline-block;
-  padding: 10px 20px;
-  margin-bottom: 10px;
-}
-
+.hero-title,
 .hero-text {
   background-color: #ddd;
   display: inline-block;
   padding: 10px 20px;
+  margin-bottom: 10px;
   line-height: 1.5;
 }
 
@@ -219,23 +127,29 @@ section {
   padding: 1.5rem;
   margin: 1rem auto;
   width: 90%;
-  min-height: 50px;
+  min-height: 80px;
 }
 
-/* Adventure Gallery Horizontal Layout */
+section h2 {
+  background-color: #ddd;
+  display: inline-block;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+
+section p {
+  background-color: #ddd;
+  padding: 10px;
+}
+
+/* Adventure Gallery */
 .adventure-gallery {
   display: flex;
-  /* Use flexbox */
   justify-content: space-between;
-  /* Space evenly between items */
   align-items: flex-start;
-  /* Align top edges */
   gap: 10px;
-  /* Gap between items */
   flex-wrap: nowrap;
-  /* Keep items on one line */
   overflow-x: auto;
-  /* Enable horizontal scroll if needed */
   padding: 1rem 0;
 }
 
@@ -260,7 +174,6 @@ section {
   font-size: 0.9rem;
   color: #333;
   background-color: #ddd;
-  /* Text placeholder */
   padding: 5px;
   border-radius: 4px;
 }
@@ -288,20 +201,12 @@ footer {
   border-radius: 4px;
 }
 
-
-
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* ==============================
+   General Styles (contact.html)
+============================== */
 body {
   font-family: var(--body-font);
   color: #B33F00;
-  /* text color updated to match adjusted orange */
   background-color: #FFFFFF;
 }
 
@@ -324,9 +229,7 @@ h1 {
 }
 
 h2 {
-
   font-size: 2em;
-  /* ✅ fixed missing semicolon */
   color: navy;
 }
 
@@ -362,6 +265,7 @@ article {
   width: 100%;
   height: auto;
 }
+
 .hero article {
   position: absolute;
   bottom: 10px;
@@ -369,23 +273,21 @@ article {
   right: 20px;
   background-color: rgba(255, 255, 255, 0.85);
   padding: 12px;
-} 
+}
+
 .cta-button {
   position: absolute;
   bottom: 80px;
-  /* adjust vertical placement */
   left: 50%;
-  /* center horizontally */
   transform: translateX(-50%);
   display: inline-block;
-  background-color: #e65c00;
+  background-color: var(--accent1-color);
   color: #000000;
   font-family: var(--body-font);
   font-size: 1.1em;
   padding: 0.75em 1.5em;
   border-radius: 6px;
   text-decoration: none;
-  /* remove underline */
   cursor: pointer;
   opacity: 0.9;
 }
@@ -399,71 +301,71 @@ article {
   font-size: 2em;
   color: navy;
 }
-/* ==============================
-   Trips Page Styles
-============================== */
 
+/* ==============================
+   Trips Page Styles (trips.html)
+============================== */
 body.trips-page {
-    font-family: var(--body-font);
-    background-color: #f5f5f5;
+  font-family: var(--body-font);
+  background-color: var(--secondary-color);
 }
 
 .trips-page .contact-cta {
-    text-align: center;
-    padding: 40px 20px;
+  text-align: center;
+  padding: 40px 20px;
 }
 
 .trips-page .cta-button {
-    display: inline-block;
-    background-color: var(--accent1-color);
-    color: #ffffff;
-    padding: 10px 20px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
+  display: inline-block;
+  background-color: var(--accent1-color);
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .trips-page .cta-button:hover {
-    opacity: 0.85;
+  opacity: 0.85;
 }
 
 .trips-page .trip-cards {
-    padding: 40px 20px;
-    text-align: center;
+  padding: 40px 20px;
+  text-align: center;
 }
 
 .trips-page .trip-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
 }
 
 .trips-page .trip-card {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .trips-page .trip-table {
-    padding: 40px 20px;
-    text-align: center;
+  padding: 40px 20px;
+  text-align: center;
 }
 
 .trips-page table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
 
 .trips-page th,
 .trips-page td {
-    border: 1px solid #ccc;
-    padding: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
 }
 
 .trips-page th {
-    background-color: var(--primary-color);
-    color: #ffffff;
+  background-color: var(--primary-color);
+  color: #ffffff;
 }
