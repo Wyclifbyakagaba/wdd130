@@ -315,19 +315,7 @@ article {
   width: 100%;
   height: auto;
 }
-
-.hero h1 {
-  position: absolute;
-  top: 20px;
-  width: 50%;
-  transform: translatex(-50%);
-  font-size: 3rem;
-  background-color: var(--overlay-bg);
-  padding: 0, 5em 1em;
-  border-radius: 5px;
-  color: var(--accent2-color);
-  transition: color 0.3s ease, text-shadow 0.3s ease;
-}.hero article {
+.hero article {
   position: absolute;
   bottom: 10px;
   left: 20px;
