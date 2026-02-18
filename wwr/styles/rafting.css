@@ -178,14 +178,14 @@ section {
     object-fit: cover; 
     border-radius: 6px; 
     margin-bottom: 0.5rem; 
-  }
-  adventure-gallery figcaption { 
+   }
+  .adventure-gallery figcaption { 
     font-size: 0.9rem; 
     color: #333; 
     background-color: #ddd; /* Text placeholder */ 
     padding: 5px; 
     border-radius: 4px;
-  }
+   }
 
 footer {
   background-color: #eee;
@@ -208,7 +208,7 @@ footer {
   align-items: center;
   justify-content: center;
   border-radius: 4px;
-}
+ }
 /* CSS Variables */
 :root {
   --primary-color: #004080;       /* deep blue */
@@ -216,14 +216,14 @@ footer {
   --accent2-color: #00cc99;       /* bright green */
   --heading-font: '"Times New Roman", Georgia, serif';
   --body-font: 'Arial', Helvetica, sans-serif;
-}
+ }
 
 
 *, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+ }
 
 body {
   font-family: var(--body-font);
@@ -326,10 +326,10 @@ nav, p, section, article {
   cursor: pointer;
   opacity: 0.9;
 }
-.some-class {
-    color: blue;
-    background: white;
-}
+.some-class h2{
+    color:navy;
+    font-size: 2em;
+ }
   .selector {
     font-size: 2em;
     color: navy;
