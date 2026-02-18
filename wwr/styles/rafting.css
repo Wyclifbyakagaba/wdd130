@@ -153,7 +153,7 @@ section {
   min-height: 50px;
 }
 
-./* Adventure Gallery Horizontal Layout */ 
+/* Adventure Gallery Horizontal Layout */ 
 .adventure-gallery { 
   display: flex; /* Use flexbox */ 
   justify-content: space-between; /* Space evenly between items */
@@ -161,7 +161,8 @@ section {
     gap: 10px; /* Gap between items */ 
     flex-wrap: nowrap; /* Keep items on one line */ 
     overflow-x: auto; /* Enable horizontal scroll if needed */ 
-    padding: 1rem 0; }
+    padding: 1rem 0;
+   }
 
 .gallery-figure {
   background-color: #ccc;
