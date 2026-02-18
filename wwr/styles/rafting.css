@@ -58,25 +58,8 @@ body.home-page header nav ul li a {
 
 body.home-page header nav ul li a:hover {
     color: var(--accent-color);
-}
-
-/* Hero */
-body.home-page .hero { ... }
-body.home-page .hero h1 { ... }
-body.home-page .hero p { ... }
-
-/* History */
-body.home-page .history { ... }
-
-/* Adventures */
-body.home-page .adventures { ... }
-
-/* Footer */
-body.home-page footer { ... }
-body.home-page footer .social a { ... }
-
-
-body.about-page {
+  }
+.body.about-page {
   background-color: #f9f9f9;
   font-family: Arial, sans-serif;
   color: #222;
