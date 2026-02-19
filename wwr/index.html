@@ -4,156 +4,116 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home | Rafting Company</title>
-  <meta name="description" content=" Discover thrilling whitewater rafting adventures with expert guides, family-friendly trips, and unforgettable river experiences.">
+  <meta name="description" content="Discover thrilling whitewater rafting adventures with expert guides, family-friendly trips, and unforgettable river experiences.">
   <meta name="author" content="Wycliff Byakagaba">
   <link rel="stylesheet" href="styles/rafting.css">
 </head>
+<body class="home-page">
 
-  <body class="home-page">
-
-  <!-- ================= HEADER ================= -->
-  <header>
-    <div class="log">
-      <img src="images/log.jpeg" alt="log White Water Rafting Company" width="100" height="100">
-    </div>
-    <nav>
-       <a href="index.html" class="active">Home</a>
-       <a href="about.html">About Us</a>
-       <a href="trips.html">Trips</a>
-       <a href="contact.html">Contact Us</a>
-    </nav>
-  </header>
-
-    
-
+<!-- ================= HEADER ================= -->
+<header>
+  <div class="log"> 
+    <img src="images/log.jpeg" alt="log White Water Rafting Company" width="100" height="100">
+  </div>
+  <nav>
+     <a href="index.html" class="active">Home</a>
+     <a href="about.html">About Us</a>
+     <a href="trips.html">Trips</a>
+     <a href="contact.html">Contact Us</a>
+  </nav>
+</header>
 
 <main>
   <!-- ================= BANNER ================= -->
   <div class="banner">
     <img src="images/banner.jpeg" alt="Rafting Adventure Banner">
-  
+  </div>
 
-
-
-  <!-- ================= MAIN ================= -->
-  
+  <!-- HERO -->
   <section class="hero">
-      <h1>Rafting Adventure</h1>
-      <p>Your adventure starts here! Join us for an unforgettable rafting experience.</p>
-    </section>
-    <!--=================history section============-->
-
-    <section class="history">
-        <h2>History</h2>
-        <p>Our company was founded in a love for adventure.</p>
-    </section>
-
-   <!-- CONTENT GRID -->
-    <section class="employee-section">
-      <div class="employee-grid">
-      
-        <div class="employee-card"></div>
-          <img src="images/hero-running-water.jpeg" alt="hero running water">
-          <h3>Rafting Fun</h3>
-          <p>Join us for an unforgettable rafting experience!</p>
-        </div>
-
-        <div class="employee-card"></div>
-          <img src="images/happy-clients.jpeg" alt="happy clients">
-          <h3>Rafting Team</h3>
-          <p>Our expert guides ensure your safety and enjoyment!</p>
-        </div>
-       <div class="employee-card"></div>
-          <img src="images/family-friendly.jpeg" alt="family friendly rafting">
-          <h3>Family friendly Rafting</h3>
-          <p>Safe and fun rafting experience for families of all ages!</p>
-      </div>
+    <h1>Rafting Adventure</h1>
+    <p>Your adventure starts here! Join us for an unforgettable rafting experience.</p>
   </section>
 
+  <!-- HISTORY -->
+  <section class="history">
+    <h2>Our History</h2>
+    <p>White Water Rafting was founded to bring adventure lovers closer
+       to nature through safe and exciting river experiences. Over the years,
+       we have guided thousands of rafters through unforgettable journeys.</p>
+  </section>
 
-    <!-- NEWSLETTER SECTION -->
-    <section>
-      <h2>Sign Up for Our Newsletter</h2>
-      
- <!-- NEWSLETTER SECTION -->
-   <section>
-   <h2>Sign Up for Our Newsletter</h2>
+  <!-- ADVENTURE -->
+  <section class="adventure">
+    <h2>Adventure Awaits You!</h2>
+    <p>Join us for thrilling rapids, breathtaking scenery, and memories
+       that will last a lifetime. Every adventure is guided by our
+       professional and experienced team.</p>
+  </section>
 
-  <form action="#" method="post">
-
-    <!-- Text Input -->
-    <div>
-      <label for="fullname">Full Name:</label>
-      <input type="text" id="fullname" name="fullname" required>
+  <!-- EMPLOYEE GRID -->
+  <section class="employee-section">
+    <div class="employee-grid">
+      <div class="employee-card">
+        <img src="images/hero-running-water.jpeg" alt="hero running water">
+        <h3>Rafting Fun</h3>
+        <p>Join us for an unforgettable rafting experience!</p>
+      </div>
+      <div class="employee-card">
+        <img src="images/happy-clients.jpeg" alt="happy clients">
+        <h3>Rafting Team</h3>
+        <p>Our expert guides ensure your safety and enjoyment!</p>
+      </div>
+      <div class="employee-card">
+        <img src="images/family-friendly.jpeg" alt="family friendly rafting">
+        <h3>Family friendly Rafting</h3>
+        <p>Safe and fun rafting experience for families of all ages!</p>
+      </div>
     </div>
+  </section>
 
-    <!-- Radio Buttons (Exactly 3, Same Name) -->
-    <fieldset>
-      <legend>Preferred Trip Type</legend>
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+    <h2>Sign Up for Our Newsletter</h2>
+    <form action="#" method="post">
+      <div>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+      </div>
+      <fieldset>
+        <legend>Preferred Trip Type</legend>
+        <label><input type="radio" name="trip_type" value="beginner" required> Beginner</label>
+        <label><input type="radio" name="trip_type" value="intermediate"> Intermediate</label>
+        <label><input type="radio" name="trip_type" value="advanced"> Advanced</label>
+      </fieldset>
+      <div>
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments" rows="4" cols="40"></textarea>
+      </div>
+      <div>
+        <label><input type="checkbox" name="subscribe" value="yes"> Subscribe to our newsletter</label>
+      </div>
+      <button type="submit">Book My Rafting Adventure</button>
+    </form>
+  </section>
 
-      <label for="beginner">
-        <input type="radio" id="beginner" name="trip_type" value="beginner" required>
-        Beginner
-      </label>
-
-      <label for="intermediate">
-        <input type="radio" id="intermediate" name="trip_type" value="intermediate">
-        Intermediate
-      </label>
-
-      <label for="advanced">
-        <input type="radio" id="advanced" name="trip_type" value="advanced">
-        Advanced
-      </label>
-    </fieldset>
-
-    <!-- Textarea -->
-    <div>
-      <label for="comments">Additional Comments:</label>
-      <textarea id="comments" name="comments" rows="4" cols="40"></textarea>
-    </div>
-
-    <!-- Checkbox -->
-    <div>
-      <label for="subscribe">
-        <input type="checkbox" id="subscribe" name="subscribe" value="yes">
-        Subscribe to our newsletter
-      </label>
-    </div>
-
-    <!-- Submit Button -->
-    <button type="submit">Book My Rafting Adventure</button>
-
-  </form>
- </section>
-
-
-    <!-- CALL TO ACTION -->
-    <section>
-      <h2>Ready for Adventure?</h2>
-      <p>
-        <a href="trips.html" class="trip-btn">Explore Our Trips</a>
-      </p>
-    </section>
+  <!-- CALL TO ACTION -->
+  <section>
+    <h2>Ready for Adventure?</h2>
+    <p><a href="trips.html" class="trip-btn">Explore Our Trips</a></p>
+  </section>
 </main>
 
 
 <!-- ================= FOOTER ================= -->
 <footer>
-      <p>© 2026 White Water Rafting | Byakagaba Wycliff</p>
-      <nav class="socialmedia" aria-label="Social media links">
-         <a href="https://facebook.com">
-         <img src="images/facebook.jpeg" alt="facebook follow Us" width="32" height="32">
-         </a>
-          <a href="https://linkin.com">
-          <img src="images/linkin.jpeg" alt="linkin follow Us" width="32" height="32">
-         </a> 
-            <a href="https://instagram.com">
-             <img src="images/instagram.jpeg" alt="instagram follow Us" width="32" height="32"> 
-          </a>
-      </nav>
+  <p>© 2026 White Water Rafting | Byakagaba Wycliff</p>
+  <nav class="socialmedia" aria-label="Social media links">
+     <a href="https://facebook.com"><img src="images/facebook.jpeg" alt="facebook follow Us" width="32" height="32"></a>
+     <a href="https://linkin.com"><img src="images/linkin.jpeg" alt="linkin follow Us" width="32" height="32"></a> 
+     <a href="https://instagram.com"><img src="images/instagram.jpeg" alt="instagram follow Us" width="32" height="32"></a>
+  </nav>
 </footer>
+
 </body>
 </html>
-
-    
