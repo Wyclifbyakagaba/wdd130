@@ -1,126 +1,118 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | White Water Rafting Company</title>
-    <meta name="description" 
-          content="Contact White Water Rafting Company for inquiries, reservations, or customer support. Reach us by phone, email, or visit our location.">
-    <meta name="author" content="Wycliff Byakagaba">
-     <link rel="stylesheet" href="styles/rafting.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Rafting Company</title>
+  <meta name="description" content="Discover thrilling whitewater rafting adventures with expert guides, family-friendly trips, and unforgettable river experiences.">
+  <meta name="author" content="Wycliff Byakagaba">
+  <link rel="stylesheet" href="styles/rafting.css">
 </head>
+<body class="home-page">
 
-<body>
+<!-- ================= HEADER ================= -->
+<header>
+  <div class="log"> 
+    <img src="images/log.jpeg" alt="log White Water Rafting Company" width="100" height="100">
+  </div>
+  <nav>
+     <a href="index.html" class="active">Home</a>
+     <a href="about.html">About Us</a>
+     <a href="trips.html">Trips</a>
+     <a href="contact.html">Contact Us</a>
+  </nav>
+</header>
 
-   <header class="header-grid">
-        <img src="images/log.jpeg" alt="log White Water Rafting Company" width="100" height="100">
-        <nav class="main-nav" aria-label="Main site navigation">
-          <a href="index.html">Home</a>
-          <a href="about.html">About Us</a>
-          <a href="trips.html">Trips</a>
-          <a href="contact.html">Contact Us</a>
-       </nav>
-    </header>
 <main>
+  <!-- ================= BANNER ================= -->
+  <div class="banner">
+    <img src="images/banner.jpeg" alt="Rafting Adventure Banner">
+  </div>
 
-    <!-- Company Information -->
-    <section class="company-info">
-          <h1>White Water Rafting Adventures</h1>
-          <p><strong>Address:</strong> 123 Main River Street</p>
-          <p>Jinja City, Uganda</p>
-          <p><strong>Phone:</strong> +256 778 436 415</p>
-          <p><strong>Email:</strong> info@whitewaterrafting.com</p>
-     </section>
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Rafting Adventure</h1>
+    <p>Your adventure starts here! Join us for an unforgettable rafting experience.</p>
+  </section>
 
-       <!-- Map -->
-       <section class="contact-section">
-         <h2>Our Location</h2>
+  <!-- HISTORY -->
+  <section class="history">
+    <h2>Our History</h2>
+    <p>White Water Rafting was founded to bring adventure lovers closer
+       to nature through safe and exciting river experiences. Over the years,
+       we have guided thousands of rafters through unforgettable journeys.</p>
+  </section>
 
-           <iframe 
-              class="map" src="https://www.google.com/maps?q=Jinja%20White%20Water%20Rafting%20Uganda&output=embed"
-              width="600" 
-              height="300"
-              loading="lazy"
-              title="Map showing White Water Rafting in Jinja, Uganda">
-            </iframe>
-        </section>
+  <!-- ADVENTURE -->
+  <section class="adventure">
+    <h2>Adventure Awaits You!</h2>
+    <p>Join us for thrilling rapids, breathtaking scenery, and memories
+       that will last a lifetime. Every adventure is guided by our
+       professional and experienced team.</p>
+  </section>
 
-       <!-- Contact Form -->
-      <section class="contact-form">
-          <h2>Get in Touch</h2>
+  <!-- EMPLOYEE GRID -->
+  <section class="employee-section">
+    <div class="employee-grid">
+      <div class="employee-card">
+        <img src="images/hero-running-water.jpeg" alt="hero running water">
+        <h3>Rafting Fun</h3>
+        <p>Join us for an unforgettable rafting experience!</p>
+      </div>
+      <div class="employee-card">
+        <img src="images/happy-clients.jpeg" alt="happy clients">
+        <h3>Rafting Team</h3>
+        <p>Our expert guides ensure your safety and enjoyment!</p>
+      </div>
+      <div class="employee-card">
+        <img src="images/family-friendly.jpeg" alt="family friendly rafting">
+        <h3>Family friendly Rafting</h3>
+        <p>Safe and fun rafting experience for families of all ages!</p>
+      </div>
+    </div>
+  </section>
 
-        <form action="#" method="post">
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+    <h2>Sign Up for Our Newsletter</h2>
+    <form action="#" method="post">
+      <div>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+      </div>
+      <fieldset>
+        <legend>Preferred Trip Type</legend>
+        <label><input type="radio" name="trip_type" value="beginner" required> Beginner</label>
+        <label><input type="radio" name="trip_type" value="intermediate"> Intermediate</label>
+        <label><input type="radio" name="trip_type" value="advanced"> Advanced</label>
+      </fieldset>
+      <div>
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments" rows="4" cols="40"></textarea>
+      </div>
+      <div>
+        <label><input type="checkbox" name="subscribe" value="yes"> Subscribe to our newsletter</label>
+      </div>
+      <button type="submit">Book My Rafting Adventure</button>
+    </form>
+  </section>
 
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+  <!-- CALL TO ACTION -->
+  <section>
+    <h2>Ready for Adventure?</h2>
+    <p><a href="trips.html" class="trip-btn">Explore Our Trips</a></p>
+  </section>
 
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" required>
-
-            <fieldset>
-                <legend>Message Purpose</legend>
-
-                <input type="radio" id="general" name="purpose" value="general" required>
-                <label for="general">General Inquiry</label>
-
-                <input type="radio" id="reservation" name="purpose" value="reservation">
-                <label for="reservation">Reservation Question</label>
-
-                <input type="radio" id="suggestion" name="purpose" value="suggestion">
-                <label for="suggestion">Website Suggestion</label>
-            </fieldset>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <input type="checkbox" id="newsletter" name="newsletter">
-            <label for="newsletter">Please subscribe me to the monthly newsletter</label>
-
-            <button type="submit">Get in Touch!</button>
-
-        </form>
-    </section>
-
-  <!-- Team Section -->
-    <section class="team-section">
-        <h2>We Are Here to Serve You</h2>
-
-        <div class="team-cards">
-            <figure>
-                <img src="images/employee1.jpg" alt="Olak Peter, Lead Rafting Guide">
-                <figcaption>Olak Peter – Lead Rafting Guide</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/employee2.jpg" alt="Sarah Namanzi, River Instructor">
-                <figcaption>Sarah Namanzi – River Instructor</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/employee3.jpg" alt="Asimwe Micheal, Safety Officer">
-                <figcaption>Asimwe Micheal – Safety Officer</figcaption>
-            </figure>
-        </div>
-    </section>
 </main>
+
+<!-- ================= FOOTER ================= -->
 <footer>
-    <p>© 2026 White Water Rafting Co. | Byakagaba Wycliff</p>
-
-    <nav class="socialmedia">
-        <a href="https://facebook.com">
-            <img src="images/facebook.jpeg" alt="Facebook"></a>
-
-        <a href="https://linkedin.com">
-            <img src="images/linkin.jpeg" alt="LinkedIn"></a>
-
-        <a href="https://instagram.com">
-            <img src="images/instagram.jpeg" alt="Instagram"></a>
-    </nav>
+  <p>© 2026 White Water Rafting | Byakagaba Wycliff</p>
+  <nav class="socialmedia" aria-label="Social media links">
+     <a href="https://facebook.com"><img src="images/facebook.jpeg" alt="facebook follow Us" width="32" height="32"></a>
+     <a href="https://linkin.com"><img src="images/linkin.jpeg" alt="linkin follow Us" width="32" height="32"></a> 
+     <a href="https://instagram.com"><img src="images/instagram.jpeg" alt="instagram follow Us" width="32" height="32"></a>
+  </nav>
 </footer>
-</body>
-</html>
-
-
-
-
-
+ </body>
+ </html>
