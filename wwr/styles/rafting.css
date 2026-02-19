@@ -22,9 +22,9 @@
 }
 
 /* ==============================
-   Homepage Styles (index.html)
+   BASE STRUCTURE 
 ============================== */
-body.home-page {
+body  {
   background-color: var(--secondary-color);
   color: var(--text-color);
   line-height: 1.6;
@@ -100,7 +100,7 @@ header.about-page-header {
   border-radius: 4px;
 }
 
-.hero {
+body.about-page.hero {
   background-color: #eee;
   padding: 2rem;
   text-align: center;
@@ -230,7 +230,7 @@ h1 {
 
 h2 {
   font-size: 2em;
-  color: navy;
+  color:var(--primary-color);
 }
 
 nav,
