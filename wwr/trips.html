@@ -1,128 +1,114 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trips | White Water Rafting Adventures</title>
-    <meta name="description" content="Explore our exciting white water rafting trips! Details, photos, and schedules for each adventure.">
-    <meta name="author" content="Wycliff Byakagaba">
-    <link rel="stylesheet" href="styles/rafting.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trips | White Water Rafting Company</title>
+  <meta name="description" content="Explore exciting rafting trips with White Water Rafting Company. Discover class III to class V rapids, family-friendly adventures, and expert-guided experiences.">
+  <meta name="author" content="Wycliff Byakagaba">
+  <link rel="stylesheet" href="styles/rafting.css">
 </head>
-<body>
-    <!-- Header / Navigation -->
-    <header>
-        <img src="images/log.jpeg" alt="log White Water Rafting Company" width="100" height="100">
-        <nav>
-          <a href="index.html">Home</a>
-          <a href="about.html">About Us</a>
-          <a href="trips.html">Trips</a>
-          <a href="contact.html">Contact Us</a>
-        </nav>
-    </header>
 
-    <!-- Main Content -->
-    <main>
-        <h1>Contact Us</h1>
-            <p>Have questions or want to book your adventure? Reach out to us!</p>
-     <form action="submit_form.php" method="post">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
+<body class="trips-page">
 
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
+  <!-- ================= HEADER ================= -->
+  <header>
+    <div class="log">
+      <img src="images/log.jpeg" alt="White Water Rafting Logo" width="100" height="100">
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="trips.html" class="active">Trips</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
 
-         <label for="message">Message:</label>
-         <textarea id="message" name="message" rows="5" required></textarea>
+  <!-- ================= MAIN ================= -->
+  <main>
+    <!-- TRIPS SECTION -->
+    <section class="trips">
+      <h1>Our Exciting Rafting Trips</h1>
+      <div class="trip-grid">
+        <article class="trip-card">
+          <h3>Rapid River Adventure</h3>
+          <p>Navigate thrilling Class III rapids. Duration: 4 hours.</p>
+          <a href="contact.html" class="cta-button">Book Now</a>
+        </article>
 
-          <button type="submit">Send</button>
-     </form>
-</main>
+        <article class="trip-card">
+          <h3>Extreme Class V Challenge</h3>
+          <p>For thrill-seekers! Experience the most challenging rapids. Duration: Full day.</p>
+          <a href="contact.html" class="cta-button">Book Now</a>
+        </article>
 
+        <article class="trip-card">
+          <h3>Family Rafting Adventure</h3>
+          <p>Safe and fun rafting experience for families of all ages. Duration: 3 hours.</p>
+          <a href="contact.html" class="cta-button">Book Now</a>
+        </article>
+      </div>
+    </section>
 
-        <!-- Trip Descriptions -->
-        <section class="trips">
-            <article>
-                <img src="images/trip-1.jpg" alt="Rapid River Adventure">
-                <h2>Rapid River Adventure</h2>
-                <p>Navigate thrilling Class rapids. Duration: 4 hours. For intermediate paddlers.</p>
-            </article>
-            <article>
-                <img src="images/trip-2.jpg" alt="Family Friendly Rapids">
-                <h2>Family Friendly Rapids</h2>
-                <p>Safe and fun rafting experience for families. Duration: 2 hours. All ages welcome.</p>
-            </article>
-            <article>
-                <img src="images/trip-3.jpg" alt="Extreme White Water Challenge">
-                <h2>Extreme White Water Challenge</h2>
-                <p>For adrenaline seekers. Tackle Class IV-V rapids. Duration: 5 hours. Must be experienced.</p>
-            </article>
-            <article>
-                <img src="images/trip-4.jpg" alt="Speed group Challenge">
-                <h2>Speed Group Challenge</h2>
-                <p>For adrenaline seekers. Tackle Class IV-V rapids. Duration: 5 hours. Must be experienced.</p>
-            </article>
-            <article>
-                <img src="images/trip-5.jpg" alt="Sunset day Challenge">
-                <h2>Sunset Day Challenge</h2>
-                <p>For adrenaline seekers. Tackle Class IV-V rapids. Duration: 5 hours. Must be experienced.</p>
-            </article>
-        </section>
+    <!-- CONTACT CTA SECTION -->
+    <section class="contact-cta">
+      <h2>Ready to Book Your Trip?</h2>
+      <p>Contact us today to reserve your rafting adventure.</p>
+      <a href="contact.html" class="cta-button">Get in Touch</a>
+    </section>
 
-        <!-- Trip Table -->
-        <section class="trip-table">
-            <h2>Trip Schedule & Details</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Trip</th>
-                        <th>Duration</th>
-                        <th>Difficulty</th>
-                        <th>Price</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Rapid River Adventure</td>
-                        <td>4 hours</td>
-                        <td>Intermediate</td>
-                        <td>$120</td>
-                    </tr>
-                    <tr>
-                        <td>Family Friendly Rapids</td>
-                        <td>2 hours</td>
-                        <td>Easy</td>
-                        <td>$80</td>
-                    </tr>
-                    <tr>
-                        <td>Extreme White Water Challenge</td>
-                        <td>5 hours</td>
-                        <td>Advanced</td>
-                        <td>$200</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+    <!-- TRIP TABLE SECTION -->
+    <section class="trip-table-section">
+      <h3>Trip Details</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Trip Name</th>
+            <th>Difficulty</th>
+            <th>Duration</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Rapid River Adventure</td>
+            <td>Class III</td>
+            <td>4 hours</td>
+            <td>$120</td>
+          </tr>
+          <tr>
+            <td>Extreme Class V Challenge</td>
+            <td>Class V</td>
+            <td>Full day</td>
+            <td>$250</td>
+          </tr>
+          <tr>
+            <td>Family Rafting Adventure</td>
+            <td>Class II</td>
+            <td>3 hours</td>
+            <td>$100</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
-        <!-- Call to Action -->
-        <section class="cta">
-            <p>Ready to book your adventure? <a href="contact.html" class="btn-cta">Contact Us Today!</a></p>
-        </section>
-    </main>
+  </main>
 
-    <!-- Footer -->
-    <footer>
-      <p>© 2026 White Water Rafting | Byakagaba Wycliff</p>
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <p>© 2026 White Water Rafting | Byakagaba Wycliff</p>
     <nav class="socialmedia" aria-label="Social media links">
-       <a href="https://facebook.com">
-        <img src="images/facebook.jpeg" alt="facebook follow Us" width="32" height="32">
+      <a href="https://facebook.com">
+        <img src="images/facebook.jpeg" alt="Facebook" width="32" height="32">
       </a>
-       <a href="https://linkin.com">
-      <img src="images/linkin.jpeg" alt="linkin follow Us" width="32" height="32">
-      </a> 
-       <a href="https://instagram.com">
-        <img src="images/instagram.jpeg" alt="instagram follow Us" width="32" height="32"> 
+      <a href="https://linkedin.com">
+        <img src="images/linkin.jpeg" alt="LinkedIn" width="32" height="32">
       </a>
-  </nav>
-</footer>
+      <a href="https://instagram.com">
+        <img src="images/instagram.jpeg" alt="Instagram" width="32" height="32">
+      </a>
+    </nav>
+  </footer>
+
 </body>
 </html>
