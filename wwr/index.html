@@ -30,7 +30,7 @@
 <main>
   <!-- ================= BANNER ================= -->
   <div class="banner">
-    <img src="images/rafting-banner.jpeg" alt="Rafting Adventure Banner" style="width:100%; height:300px;">
+    <img src="images/rafting-banner.jpeg" alt="Rafting Adventure Banner">">
   </div>
 
 
@@ -71,20 +71,59 @@
     <!-- NEWSLETTER SECTION -->
     <section>
       <h2>Sign Up for Our Newsletter</h2>
-      <form>
-        <div class="form-group">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
-        </div>
+      
+    <!-- NEWSLETTER SECTION -->
+<section>
+  <h2>Sign Up for Our Newsletter</h2>
 
-        <div class="form-group">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-        </div>
+  <form action="#" method="post">
 
-        <button type="submit" class="submit-btn">Subscribe</button>
-      </form>
-    </section>
+    <!-- Text Input -->
+    <div>
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required>
+    </div>
+
+    <!-- Radio Buttons (Exactly 3, Same Name) -->
+    <fieldset>
+      <legend>Preferred Trip Type</legend>
+
+      <label for="beginner">
+        <input type="radio" id="beginner" name="trip_type" value="beginner" required>
+        Beginner
+      </label>
+
+      <label for="intermediate">
+        <input type="radio" id="intermediate" name="trip_type" value="intermediate">
+        Intermediate
+      </label>
+
+      <label for="advanced">
+        <input type="radio" id="advanced" name="trip_type" value="advanced">
+        Advanced
+      </label>
+    </fieldset>
+
+    <!-- Textarea -->
+    <div>
+      <label for="comments">Additional Comments:</label>
+      <textarea id="comments" name="comments" rows="4" cols="40"></textarea>
+    </div>
+
+    <!-- Checkbox -->
+    <div>
+      <label for="subscribe">
+        <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+        Subscribe to our newsletter
+      </label>
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit">Book My Rafting Adventure</button>
+
+  </form>
+</section>
+
 
     <!-- CALL TO ACTION -->
     <section>
