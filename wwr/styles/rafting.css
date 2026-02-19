@@ -248,17 +248,17 @@ article {
 
 /* Hero Section */
 .hero {
-  position: absolute;
+  position: relative;
   top: 20px;
-  width: 50%;
-  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   font-size: 3rem;
-  background-color: var(--overlay-bg);
-  padding: 0.5em 1em;
-  border-radius: 5px;
   color: var(--accent2-color);
-  transition: color 0.3s ease, text-shadow 0.3s ease;
 }
+
+
+
 
 .hero img {
   display: block;
@@ -266,14 +266,7 @@ article {
   height: auto;
 }
 
-.hero article {
-  position: absolute;
-  bottom: 10px;
-  left: 20px;
-  right: 20px;
-  background-color: rgba(255, 255, 255, 0.85);
-  padding: 12px;
-}
+
 
 .cta-button {
   position: absolute;
