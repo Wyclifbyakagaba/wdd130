@@ -1,0 +1,272 @@
+/* ==============================
+   VARIABLES
+============================== */
+:root {
+  --accent-color: #0077b6;
+  --accent2-color: #ffffff;
+  --bg-color: #f1f1f1;
+  --overlay-bg: rgba(0, 0, 0, 0.5);
+  --font-family: 'Arial', sans-serif;
+}
+
+/* ==============================
+   GLOBAL STYLES
+============================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body.home-page {
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+  line-height: 1.6;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: var(--accent-color);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ==============================
+   HEADER
+============================== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--accent-color);
+  color: var(--accent2-color);
+}
+
+header nav a {
+  margin-left: 1rem;
+  font-weight: bold;
+  color: var(--accent2-color);
+}
+
+header nav a.active {
+  text-decoration: underline;
+}
+
+/* ==============================
+   BANNER
+============================== */
+.banner {
+  position: relative;
+  width: 100%;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  display: block;
+}
+
+/* ==============================
+   HERO SECTION
+============================== */
+.hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--accent2-color);
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  background-color: var(--overlay-bg);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  background-color: var(--overlay-bg);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+/* ==============================
+   HISTORY & ADVENTURE
+============================== */
+.history,
+.adventure {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 0 2rem;
+}
+
+.history h2,
+.adventure h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+}
+
+.history p,
+.adventure p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* ==============================
+   EMPLOYEE GRID
+============================== */
+.employee-section {
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 0 2rem;
+}
+
+.employee-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--accent-color);
+  text-align: center;
+}
+
+.employee-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.employee-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 1rem;
+}
+
+.employee-card h3 {
+  margin: 1rem 0 0.5rem;
+  color: var(--accent-color);
+}
+
+.employee-card p {
+  font-size: 1rem;
+}
+
+/* ==============================
+   NEWSLETTER FORM
+============================== */
+.newsletter {
+  background-color: #e0f7fa;
+  padding: 2rem;
+  text-align: center;
+}
+
+.newsletter h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+}
+
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.newsletter input[type="text"],
+.newsletter textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.newsletter button {
+  background-color: var(--accent-color);
+  color: var(--accent2-color);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background-color: #005f87;
+}
+
+/* ==============================
+   CALL TO ACTION
+============================== */
+.cta {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.cta h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+}
+
+.cta .trip-btn {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: var(--accent2-color);
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.cta .trip-btn:hover {
+  background-color: #005f87;
+}
+
+/* ==============================
+   FOOTER
+============================== */
+footer {
+  background-color: var(--accent-color);
+  color: var(--accent2-color);
+  padding: 1.5rem 2rem;
+  text-align: center;
+}
+
+footer nav.socialmedia a {
+  margin: 0 0.5rem;
+}
+
+/* ==============================
+   RESPONSIVE
+============================== */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .employee-grid {
+    gap: 1rem;
+  }
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  header nav {
+    margin-top: 0.5rem;
+  }
+}
