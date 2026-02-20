@@ -58,11 +58,52 @@
     </figure>
     </section>
  </main>
+       <!-- CONTACT FORM -->
+  <section>
+    <h2>Book Your Adventure</h2>
 
+    <form action="#" method="post">
 
+      <!-- Text Input -->
+      <div>
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" required>
+      </div>
 
+      <!-- Radio Buttons (Exactly 3, same name) -->
+      <fieldset>
+        <legend>Select Your Experience Level</legend>
 
- <footer>
+        <input type="radio" id="beginner" name="experience" value="beginner">
+        <label for="beginner">Beginner</label>
+
+        <input type="radio" id="intermediate" name="experience" value="intermediate">
+        <label for="intermediate">Intermediate</label>
+
+        <input type="radio" id="expert" name="experience" value="expert">
+        <label for="expert">Expert</label>
+      </fieldset>
+
+      <!-- Textarea -->
+      <div>
+        <label for="message">Additional Information</label>
+        <textarea id="message" name="message" rows="4" cols="40"></textarea>
+      </div>
+
+      <!-- Checkbox -->
+      <div>
+        <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+        <label for="subscribe">Subscribe to our adventure newsletter</label>
+      </div>
+
+      <!-- Submit Button -->
+      <div>
+        <button type="submit">Book My Rafting Trip</button>
+      </div>
+
+    </form>
+  </section>
+<footer>
   <p>© 2026 White Water Rafting | Byakagaba Wycliff</p>
   <nav class="socialmedia">
     <a href="https://facebook.com"><img src="images/facebook.jpeg" alt="facebook follow Us" width="32" height="32"></a>
